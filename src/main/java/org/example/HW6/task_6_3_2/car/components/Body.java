@@ -1,0 +1,2 @@
+package org.example.HW6.task_6_3_2.car.components;
+public class Body { private String type; public Body(String type) { this.type = type; } public String toString() { return "Body{" + "type='" + type + '\'' + '}'; }}

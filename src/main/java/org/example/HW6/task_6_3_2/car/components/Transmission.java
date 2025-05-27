@@ -1,0 +1,2 @@
+package org.example.HW6.task_6_3_2.car.components;
+public class Transmission { private String type; private int gears; public Transmission(String type, int gears) { this.type = type; this.gears = gears; } public String toString() { return "Transmission{" + "type='" + type + '\'' + ", gears=" + gears + '}'; }}
