@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Builder Pattern - Car" id="7qlttHV3UIwr5dr2QeVL">
+    <mxGraphModel dx="1298" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fqYnZb2cISje9lyJEThu-1" value="&lt;&lt;interface&gt;&gt;&#xa;CarBuilder&#xa;+ buildBody()&#xa;+ buildEngine()&#xa;+ buildTransmission()&#xa;+ buildWheels()&#xa;+ paint(color)&#xa;+ getCar(): Car" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=140;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-2" value="SedanCarBuilder" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-3" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-2" target="fqYnZb2cISje9lyJEThu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-4" value="Director" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-5" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-4" target="fqYnZb2cISje9lyJEThu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-6" value="Car&#xa;- body: Body&#xa;- engine: Engine&#xa;- transmission: Transmission&#xa;- wheels: Wheel&#xa;- color: String" style="shape=swimlane;whiteSpace=wrap;html=1;startSize=110;" vertex="1" parent="1">
+          <mxGeometry x="600" y="70" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-7" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-1" target="fqYnZb2cISje9lyJEThu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-8" value="Body" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-9" value="Engine" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-10" value="Transmission" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-11" value="Wheel" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-12" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-6" target="fqYnZb2cISje9lyJEThu-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-13" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-6" target="fqYnZb2cISje9lyJEThu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-14" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-6" target="fqYnZb2cISje9lyJEThu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fqYnZb2cISje9lyJEThu-15" style="endArrow=block;html=1;" edge="1" parent="1" source="fqYnZb2cISje9lyJEThu-6" target="fqYnZb2cISje9lyJEThu-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
